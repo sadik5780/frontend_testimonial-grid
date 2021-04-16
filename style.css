@@ -1,0 +1,130 @@
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 320px 320px;
+    grid-gap: 20px;
+}
+
+.grid-1{
+    background-color: hsl(263, 55%, 52%);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 15px;
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position-x: 400px;
+    background-size: 23%;
+}
+
+img,h4,.description{
+    position: relative;
+}
+img{
+    top: 20px;
+    left: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+h4,.description{
+    top: -45px;
+    left: 90px;
+    line-height: 0px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+h4{
+    color: white;
+    font-weight: 600;
+    
+}
+.description{
+    font-size: 13px;
+    color: hsl(210, 46%, 95%);
+}
+
+h3{
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: -20px 24px 25px 25px;
+    font-size: 24px;
+}
+
+.details{
+    color: hsl(0, 0%, 81%);
+    margin: 0px 25px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.grid-2{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 15px;
+}
+.grid-3{
+    background-color:white;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border-radius: 15px;
+    box-shadow: 20px 20px 25px 25px hsl(217, 19%, 90%);
+}
+.grid-4{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 20px 20px 25px 25px hsl(217, 19%, 90%);
+}
+.grid-5{
+    background-color: hsl(219, 29%, 14%);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-radius: 15px;
+}
+.grid-3 h3,.grid-3 h4,.grid-4 h3,.grid-4 h4{
+    color: hsl(0, 0%, 20%);
+}
+.grid-3 .description,.grid-3 .details,.grid-4 .description,.grid-4 .details{
+    color: hsl(0, 0%, 40%);
+}
+
+
+@media screen and (max-width: 375px){
+    .grid{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-1{
+        position: relative;
+        width: 100%;
+    }
+    .grid-2{
+        position: relative;
+    }
+    .grid-3{
+        position: relative;
+    }
+    .grid-4{
+        position: relative;
+    }
+    .grid-5{
+        position: relative;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
