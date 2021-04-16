@@ -16,7 +16,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
     border-radius: 15px;
-    background-image: url('images/bg-pattern-quotation.svg');
+    background-image: url('./bg-pattern-quotation.svg');
     background-repeat: no-repeat;
     background-position-x: 400px;
     background-size: 23%;
